@@ -134,45 +134,4 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             `;
         });
-
-    // ---
-    // NEW Logic for Next/Back navigation buttons on saints-YYYY.html pages
-    // These buttons are distinct from the saint detail view's back button
-    const yearNavBackButton = document.getElementById('backButton'); // Main year navigation back button
-    const yearNavNextButton = document.getElementById('nextButton'); // Main year navigation next button
-
-    // Only proceed if the navigation buttons exist on the current page
-    if (yearNavBackButton && yearNavNextButton) {
-        // We already have 'year' parsed at the top of this script
-        const currentYear = parseInt(year); // Ensure it's a number for calculations
-
-        if (currentYear) {
-            const firstYear = 2000; // Navigation will now go back to 2000
-            const lastYear = 2025;  // Your current last year
-
-            // Set up Back button
-            const prevYear = currentYear - 1;
-            if (prevYear >= firstYear) {
-                yearNavBackButton.onclick = () => {
-                    window.location.href = `saints-${prevYear}.html`;
-                };
-            } else {
-                yearNavBackButton.disabled = true; // Disable if it's the first year (2000)
-            }
-
-            // Set up Next button
-            const nextYear = currentYear + 1;
-            if (nextYear <= lastYear) {
-                yearNavNextButton.onclick = () => {
-                    window.location.href = `saints-${nextYear}.html`;
-                };
-            } else {
-                yearNavNextButton.disabled = true; // Disable if it's the last year (2025)
-            }
-        } else {
-            // Should ideally not happen if 'year' is parsed successfully above
-            yearNavBackButton.disabled = true;
-            yearNavNextButton.disabled = true;
-        }
-    }
 });
