@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Existing logic for main navigation (Home, About Us, Contact)
     const navLinks = document.querySelectorAll('.main-nav .nav-link');
     const contentSections = document.querySelectorAll('.main-content-area .content-section');
 
@@ -58,5 +59,52 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         handleIndexHashChange();
         window.addEventListener('hashchange', handleIndexHashChange);
+    }
+
+    // ---
+    // Logic for Next/Back navigation buttons on saints-YYYY.html pages
+    const backButton = document.getElementById('backButton');
+    const nextButton = document.getElementById('nextButton');
+
+    // Only proceed if the navigation buttons exist on the current page
+    if (backButton && nextButton) {
+        // Get the current year from the filename (e.g., saints-2013.html -> 2013)
+        const path = window.location.pathname;
+        const filename = path.substring(path.lastIndexOf('/') + 1); // e.g., saints-2013.html
+        const match = filename.match(/saints-(\d{4})\.html/);
+
+        let currentYear = null;
+        if (match && match[1]) {
+            currentYear = parseInt(match[1]);
+        }
+
+        if (currentYear) {
+            const firstYear = 2000; // Navigation will now go back to 2000
+            const lastYear = 2025;  // Your current last year
+
+            // Set up Back button
+            const prevYear = currentYear - 1;
+            if (prevYear >= firstYear) {
+                backButton.onclick = () => {
+                    window.location.href = `saints-${prevYear}.html`;
+                };
+            } else {
+                backButton.disabled = true; // Disable if it's the first year (2000)
+            }
+
+            // Set up Next button
+            const nextYear = currentYear + 1;
+            if (nextYear <= lastYear) {
+                nextButton.onclick = () => {
+                    window.location.href = `saints-${nextYear}.html`;
+                };
+            } else {
+                nextButton.disabled = true; // Disable if it's the last year (2025)
+            }
+        } else {
+            // If the year can't be parsed from the URL, disable buttons
+            backButton.disabled = true;
+            nextButton.disabled = true;
+        }
     }
 });
