@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const saintsGrid = document.querySelector('.saints-grid');
     const saintDetailView = document.getElementById('saint-detail-view');
-    const backButton = saintDetailView.querySelector('.back-button');
+    const detailViewBackButton = saintDetailView.querySelector('.back-button'); // Renamed for clarity
     const currentYearSection = document.querySelector('.year-content-section.active'); // Assuming only one active year section
 
     // Extract the year from the current HTML file name (e.g., saints-2000.html -> 2000)
@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function showSaintDetail(saint) {
         document.getElementById('detail-saint-image').src = saint.image_url;
         document.getElementById('detail-saint-image').alt = saint.name;
+        // Use innerHTML for the name/date div if you want to keep the inner elements as HTML,
+        // or create p/h3 elements dynamically. For consistency, I'll keep your structure.
         document.getElementById('detail-saint-name-date').innerHTML = `<h3>${saint.name}</h3><p>${saint.canonization_date}</p>`;
 
         const historyDiv = document.getElementById('detail-saint-history');
@@ -82,8 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
         saintDetailView.classList.add('active');
     }
 
-    // Back button functionality
-    backButton.addEventListener('click', () => {
+    // Back button functionality for Saint Detail View
+    detailViewBackButton.addEventListener('click', () => { // Using the renamed variable
         saintDetailView.classList.remove('active');
         currentYearSection.classList.add('active');
     });
@@ -132,4 +134,45 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             `;
         });
+
+    // ---
+    // NEW Logic for Next/Back navigation buttons on saints-YYYY.html pages
+    // These buttons are distinct from the saint detail view's back button
+    const yearNavBackButton = document.getElementById('backButton'); // Main year navigation back button
+    const yearNavNextButton = document.getElementById('nextButton'); // Main year navigation next button
+
+    // Only proceed if the navigation buttons exist on the current page
+    if (yearNavBackButton && yearNavNextButton) {
+        // We already have 'year' parsed at the top of this script
+        const currentYear = parseInt(year); // Ensure it's a number for calculations
+
+        if (currentYear) {
+            const firstYear = 2000; // Navigation will now go back to 2000
+            const lastYear = 2025;  // Your current last year
+
+            // Set up Back button
+            const prevYear = currentYear - 1;
+            if (prevYear >= firstYear) {
+                yearNavBackButton.onclick = () => {
+                    window.location.href = `saints-${prevYear}.html`;
+                };
+            } else {
+                yearNavBackButton.disabled = true; // Disable if it's the first year (2000)
+            }
+
+            // Set up Next button
+            const nextYear = currentYear + 1;
+            if (nextYear <= lastYear) {
+                yearNavNextButton.onclick = () => {
+                    window.location.href = `saints-${nextYear}.html`;
+                };
+            } else {
+                yearNavNextButton.disabled = true; // Disable if it's the last year (2025)
+            }
+        } else {
+            // Should ideally not happen if 'year' is parsed successfully above
+            yearNavBackButton.disabled = true;
+            yearNavNextButton.disabled = true;
+        }
+    }
 });
