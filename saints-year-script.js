@@ -1,209 +1,116 @@
 document.addEventListener('DOMContentLoaded', function() {
-
-    const saintsGridSection = document.querySelector('.year-content-section.active');
+    const saintsGrid = document.querySelector('.saints-grid');
     const saintDetailView = document.getElementById('saint-detail-view');
-    const backButton = document.querySelector('.back-button');
+    const backButton = saintDetailView.querySelector('.back-button');
+    const currentYearSection = document.querySelector('.year-content-section.active'); // Assuming only one active year section
 
-    // Only proceed if these elements exist (i.e., we are on a saint year page)
-    if (saintsGridSection && saintDetailView) {
-        const detailImage = document.getElementById('detail-saint-image');
-        const detailNameDate = document.getElementById('detail-saint-name-date');
-        const detailHistory = document.getElementById('detail-saint-history');
-        let currentSaintsData = {}; // This will store the loaded data for the current year
+    // Extract the year from the current HTML file name (e.g., saints-2000.html -> 2000)
+    const yearMatch = window.location.pathname.match(/saints-(\d{4})\.html/);
+    const year = yearMatch ? yearMatch[1] : null; // Get the year, e.g., "2000"
 
-        // Function to extract the year from the URL (e.g., saints-2000.html -> 2000)
-        function getCurrentYear() {
-            const pathSegments = window.location.pathname.split('/');
-            const filename = pathSegments[pathSegments.length - 1]; // e.g., "saints-2000.html"
-            const yearMatch = filename.match(/saints-(\d{4})\.html/);
-            return yearMatch ? yearMatch[1] : null; // Returns "2000" or null
-        }
-
-        // Function to fetch saint data for the current year
-        async function loadSaintsData(year) {
-            if (!year) {
-                console.error("Could not determine the year from the URL.");
-                return;
-            }
-            const dataUrl = `assets/data/saints-${year}.json`;
-            try {
-                const response = await fetch(dataUrl);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status} for ${dataUrl}`);
-                }
-                currentSaintsData = await response.json();
-                console.log(`Loaded data for year ${year}:`, currentSaintsData);
-                renderSaintGrid(); // Render the grid after data is loaded
-                showSaintFromHashOnLoad(); // Check hash after grid is rendered
-            } catch (error) {
-                console.error("Error loading saint data:", error);
-                // Display a user-friendly message if data fails to load
-                saintsGridSection.innerHTML = '<p class="error-message">Failed to load saint data for this year. Please try again later.</p>';
-            }
-        }
-
-        // Function to dynamically render the saint grid
-        function renderSaintGrid() {
-            const saintsGrid = saintsGridSection.querySelector('.saints-grid');
-            if (!saintsGrid) {
-                console.error("Saints grid container not found!");
-                return;
-            }
-            saintsGrid.innerHTML = ''; // Clear existing content (like old placeholders)
-
-            // Iterate over the loaded saintsData and create cards
-            for (const slug in currentSaintsData) {
-                if (currentSaintsData.hasOwnProperty(slug)) {
-                    const saint = currentSaintsData[slug];
-
-                    const cardLink = document.createElement('a');
-                    cardLink.href = `#`; // Still prevent default, handle with JS
-                    cardLink.classList.add('saint-card');
-                    cardLink.setAttribute('data-slug', slug);
-
-                    const img = document.createElement('img');
-                    img.src = saint.image_url;
-                    img.alt = saint.name;
-                    img.loading = 'lazy'; // Add lazy loading for images
-
-                    const pName = document.createElement('p');
-                    pName.classList.add('saint-name');
-                    pName.textContent = saint.name;
-
-                    cardLink.appendChild(img);
-                    cardLink.appendChild(pName);
-                    saintsGrid.appendChild(cardLink);
-                }
-            }
-            addCardClickListeners(); // Re-attach listeners after rendering
-        }
-
-        // Function to add click listeners to newly rendered saint cards
-        function addCardClickListeners() {
-            const saintCards = saintsGridSection.querySelectorAll('.saint-card');
-            saintCards.forEach(card => {
-                card.removeEventListener('click', handleSaintCardClick); // Prevent duplicate listeners
-                card.addEventListener('click', handleSaintCardClick);
-            });
-        }
-
-        // Event handler for saint card clicks
-        function handleSaintCardClick(event) {
-            event.preventDefault(); // Prevent default link behavior (no page reload)
-
-            const slug = this.getAttribute('data-slug');
-            const saint = currentSaintsData[slug]; // Get data from the 'currentSaintsData' object
-
-            if (saint) {
-                // Populate the detail view with saint's data
-                detailImage.src = saint.image_url;
-                detailImage.alt = saint.name;
-                detailNameDate.innerHTML = `${saint.name}<br><small>(${saint.canonization_date})</small>`;
-
-                // Clear previous history and add new paragraphs
-                detailHistory.innerHTML = '';
-                saint.history.split('\n').forEach(paragraphText => {
-                    if (paragraphText.trim() !== '') {
-                        const p = document.createElement('p');
-                        p.textContent = paragraphText.trim();
-                        detailHistory.appendChild(p);
-                    }
-                });
-
-                // Hide the grid and show the detail view
-                saintsGridSection.classList.remove('active');
-                saintDetailView.classList.add('active');
-
-                // Optionally, scroll to the top of the detail view
-                saintDetailView.scrollIntoView({ behavior: 'smooth' });
-
-                // Update URL hash for direct linking/back button
-                if (history.replaceState) {
-                    history.replaceState(null, '', window.location.pathname + window.location.search + '#' + slug);
-                } else {
-                    window.location.hash = slug;
-                }
-
-            } else {
-                console.error('Saint data not found for slug:', slug);
-                // Optionally display an error message or fallback content
-            }
-        }
-
-        // Handle back button click
-        if (backButton) {
-            backButton.addEventListener('click', function() {
-                // Hide the detail view and show the grid
-                saintDetailView.classList.remove('active');
-                saintsGridSection.classList.add('active');
-
-                // Scroll back to the top of the grid
-                saintsGridSection.scrollIntoView({ behavior: 'smooth' });
-
-                // Remove hash from URL
-                if (history.replaceState) {
-                    history.replaceState(null, '', window.location.pathname + window.location.search);
-                } else {
-                    window.location.hash = '';
-                }
-            });
-        }
-
-        // Handle direct URL with hash on page load (e.g., saints-2000.html#maria-faustina-kowalska)
-        function showSaintFromHashOnLoad() {
-            const hash = window.location.hash.substring(1); // Get hash without '#'
-            if (hash) {
-                // Ensure currentSaintsData is populated before trying to find the saint
-                if (Object.keys(currentSaintsData).length > 0) {
-                    const saint = currentSaintsData[hash];
-                    if (saint) {
-                        // Populate the detail view
-                        detailImage.src = saint.image_url;
-                        detailImage.alt = saint.name;
-                        detailNameDate.innerHTML = `${saint.name}<br><small>(${saint.canonization_date})</small>`;
-
-                        detailHistory.innerHTML = '';
-                        saint.history.split('\n').forEach(paragraphText => {
-                            if (paragraphText.trim() !== '') {
-                                const p = document.createElement('p');
-                                p.textContent = paragraphText.trim();
-                                detailHistory.appendChild(p);
-                            }
-                        });
-
-                        // Hide grid and show detail view
-                        saintsGridSection.classList.remove('active');
-                        saintDetailView.classList.add('active');
-
-                        // Scroll to the top of the detail view instantly on load
-                        saintDetailView.scrollIntoView({ behavior: 'instant' });
-                    } else {
-                        console.warn(`Saint with slug '${hash}' not found in current year's data. Displaying grid.`);
-                        // If hash doesn't match a saint, default to showing the grid
-                        saintDetailView.classList.remove('active');
-                        saintsGridSection.classList.add('active');
-                    }
-                } else {
-                    // Data not yet loaded, try again after data is loaded (handled by loadSaintsData -> renderSaintGrid -> showSaintFromHashOnLoad)
-                    console.log("Data not yet loaded, will retry showSaintFromHashOnLoad after data fetch.");
-                }
-            } else {
-                // No hash, ensure grid is active
-                saintDetailView.classList.remove('active');
-                saintsGridSection.classList.add('active');
-            }
-        }
-
-        // Initial setup for the year page: Load data, then render grid and check hash
-        const year = getCurrentYear();
-        if (year) {
-            loadSaintsData(year);
-        } else {
-            console.error("Could not determine year for saint data loading. Ensure HTML filename is saints-YYYY.html");
-            saintsGridSection.innerHTML = '<p class="error-message">This page could not load correctly. Please return to the <a href="index.html">Home Page</a>.</p>';
-        }
-
-        // Re-evaluate on hash change (e.g., if user uses browser's back/forward buttons on detail view)
-        window.addEventListener('hashchange', showSaintFromHashOnLoad);
+    if (!year) {
+        saintsGrid.innerHTML = '<p>Error: Could not determine the year for saint data.</p>';
+        return;
     }
+
+    const jsonFilePath = `assets/data/saints-${year}.json`;
+
+    // Function to create a saint card
+    function createSaintCard(saintId, saint) {
+        const card = document.createElement('div');
+        card.classList.add('saint-card');
+        card.dataset.saintId = saintId; // Store the saint ID for detail view
+
+        const image = document.createElement('img');
+        image.src = saint.image_url;
+        image.alt = saint.name;
+        image.classList.add('saint-image');
+
+        const name = document.createElement('h3');
+        name.classList.add('saint-name');
+        name.textContent = saint.name;
+
+        const date = document.createElement('p');
+        date.classList.add('canonization-date');
+        date.textContent = `Canonized: ${saint.canonization_date}`;
+
+        card.appendChild(image);
+        card.appendChild(name);
+        card.appendChild(date);
+
+        card.addEventListener('click', () => showSaintDetail(saint)); // Pass the full saint object
+        return card;
+    }
+
+    // Function to display saint details
+    function showSaintDetail(saint) {
+        document.getElementById('detail-saint-image').src = saint.image_url;
+        document.getElementById('detail-saint-image').alt = saint.name;
+        document.getElementById('detail-saint-name-date').textContent = `${saint.name} (Canonized: ${saint.canonization_date})`;
+
+        const historyDiv = document.getElementById('detail-saint-history');
+        historyDiv.innerHTML = ''; // Clear previous history
+        const historyParagraphs = saint.history.split('\n\n'); // Split history into paragraphs
+        historyParagraphs.forEach(paragraphText => {
+            if (paragraphText.trim() !== '') {
+                const p = document.createElement('p');
+                p.textContent = paragraphText.trim();
+                historyDiv.appendChild(p);
+            }
+        });
+
+        // Add source URL if available
+        const sourceDiv = document.getElementById('detail-saint-source'); // Get the source div
+        if (saint.source_url) {
+            sourceDiv.innerHTML = ''; // Clear previous content
+            const sourceLink = document.createElement('a');
+            sourceLink.href = saint.source_url;
+            sourceLink.textContent = 'Read More (Source)';
+            sourceLink.target = '_blank'; // Open in new tab
+            sourceLink.rel = 'noopener noreferrer'; // Security best practice
+            sourceDiv.appendChild(sourceLink);
+            sourceDiv.style.display = 'block'; // Ensure the div is visible
+        } else {
+            sourceDiv.style.display = 'none'; // Hide the div if no source
+        }
+
+        currentYearSection.classList.remove('active');
+        saintDetailView.classList.add('active');
+    }
+
+    // Back button functionality
+    backButton.addEventListener('click', () => {
+        saintDetailView.classList.remove('active');
+        currentYearSection.classList.add('active');
+    });
+
+    // Fetch saint data
+    fetch(jsonFilePath)
+        .then(response => {
+            if (!response.ok) {
+                // Check for 404 or other HTTP errors
+                if (response.status === 404) {
+                     throw new Error(`Saint data for ${year} not found at ${jsonFilePath}.`);
+                }
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (Object.keys(data).length === 0) {
+                saintsGrid.innerHTML = '<p>No saint data available for this year yet.</p>';
+                return;
+            }
+            for (const saintId in data) {
+                if (data.hasOwnProperty(saintId)) {
+                    const saint = data[saintId];
+                    const card = createSaintCard(saintId, saint);
+                    saintsGrid.appendChild(card);
+                }
+            }
+        })
+        .catch(error => {
+            console.error('Error loading saint data:', error);
+            saintsGrid.innerHTML = `<p>Failed to load saint data for this year: ${error.message}</p>`;
+        });
 });
