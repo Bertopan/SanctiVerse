@@ -9,7 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const year = yearMatch ? yearMatch[1] : null; // Get the year, e.g., "2000"
 
     if (!year) {
-        saintsGrid.innerHTML = '<p>Error: Could not determine the year for saint data.</p>';
+        saintsGrid.innerHTML = `
+            <div class="error-message-container">
+                <p class="error-message">Error: Could not determine the year for saint data. Please check the URL.</p>
+            </div>
+        `;
         return;
     }
 
@@ -46,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function showSaintDetail(saint) {
         document.getElementById('detail-saint-image').src = saint.image_url;
         document.getElementById('detail-saint-image').alt = saint.name;
-        document.getElementById('detail-saint-name-date').textContent = `${saint.name} (Canonized: ${saint.canonization_date})`;
+        document.getElementById('detail-saint-name-date').innerHTML = `<h3>${saint.name}</h3><p>${saint.canonization_date}</p>`;
 
         const historyDiv = document.getElementById('detail-saint-history');
         historyDiv.innerHTML = ''; // Clear previous history
@@ -88,29 +92,44 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch(jsonFilePath)
         .then(response => {
             if (!response.ok) {
-                // Check for 404 or other HTTP errors
+                // If file not found (404), treat it as no data for the year,
+                // so the empty object message will be displayed.
                 if (response.status === 404) {
-                     throw new Error(`Saint data for ${year} not found at ${jsonFilePath}.`);
+                    return {}; // Return an empty object to trigger the "no saints" message
                 }
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             return response.json();
         })
         .then(data => {
+            saintsGrid.innerHTML = ''; // Clear any previous loading/error messages
+
             if (Object.keys(data).length === 0) {
-                saintsGrid.innerHTML = '<p>No saint data available for this year yet.</p>';
-                return;
-            }
-            for (const saintId in data) {
-                if (data.hasOwnProperty(saintId)) {
-                    const saint = data[saintId];
-                    const card = createSaintCard(saintId, saint);
-                    saintsGrid.appendChild(card);
+                saintsGrid.innerHTML = `
+                    <div class="no-saints-message-container">
+                        <p class="no-saints-message">
+                            No new saints were formally canonized by the Pope in ${year}.
+                            Please select another year from the main page.
+                        </p>
+                    </div>
+                `;
+            } else {
+                for (const saintId in data) {
+                    if (data.hasOwnProperty(saintId)) {
+                        const saint = data[saintId];
+                        const card = createSaintCard(saintId, saint);
+                        saintsGrid.appendChild(card);
+                    }
                 }
             }
         })
         .catch(error => {
             console.error('Error loading saint data:', error);
-            saintsGrid.innerHTML = `<p>Failed to load saint data for this year: ${error.message}</p>`;
+            saintsGrid.innerHTML = `
+                <div class="error-message-container">
+                    <p class="error-message">Failed to load saint data for this year.</p>
+                    <p class="error-message-detail">Reason: ${error.message}</p>
+                </div>
+            `;
         });
 });

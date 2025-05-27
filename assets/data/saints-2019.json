@@ -1,56 +1,37 @@
 {
-  "saint-luigi-scrosoppi": {
-    "name": "Saint Luigi Scrosoppi",
-    "image_url": "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20010610_scrosoppi_photo.html",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Luigi Scrosoppi (1804-1884) was an Italian priest who dedicated his life to the care of orphans and the poor. He founded the Congregation of the Sisters of Providence of Saint Gaetano of Thiene, focusing on the education and support of disadvantaged girls. He was known for his profound charity, humility, and unwavering trust in Divine Providence, often begging for alms to sustain his charitable works."
+  "saint-john-henry-newman": {
+    "name": "Saint John Henry Newman",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/John_Henry_Newman_by_Sir_John_Everett_Millais%2C_1st_Bt.jpg/250px-John_Henry_Newman_by_Sir_John_Everett_Millais%2C_1st_Bt.jpg",
+    "canonization_date": "October 13, 2019",
+    "history": "Saint John Henry Newman (1801–1890) was an influential English theologian, philosopher, and Cardinal. Originally an Anglican priest, he was a key figure in the Oxford Movement, advocating for a return to traditional Christian thought and practice. He converted to Catholicism in 1845, eventually becoming a cardinal. His writings on faith, reason, and the development of Christian doctrine continue to be highly influential.",
+    "source_url": "https://en.wikipedia.org/wiki/John_Henry_Newman"
   },
-  "saint-agostino-roscelli": {
-    "name": "Saint Agostino Roscelli",
-    "image_url": "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20010610_roscelli_photo.html",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Agostino Roscelli (1818-1902) was an Italian priest born into poverty who dedicated his life to serving the needy, particularly young girls at risk. He founded the Institute of Sisters of the Immaculata to provide education and protection for vulnerable young women. He was known for his deep devotion to the Blessed Virgin Mary and his humble, prayerful life."
+  "saint-mariam-thresia-chiramel-mankidiyan": {
+    "name": "Saint Mariam Thresia Chiramel Mankidiyan",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLtY1G8E4zehArzy4G362ZAghcD4F55643FQ&s",
+    "canonization_date": "October 13, 2019",
+    "history": "Saint Mariam Thresia Chiramel Mankidiyan (1876–1926) was an Indian Syro-Malabar Catholic nun and the founder of the Congregation of the Holy Family. She was known for her intense mystical experiences, including stigmata, and her deep compassion for the poor and marginalized. She dedicated her life to caring for families, the sick, and the dying, establishing schools and homes for the needy.",
+    "source_url": "https://en.wikipedia.org/wiki/Mariam_Thresia_Chiramel_Mankidiyan"
   },
-  "saint-bernard-of-corleone": {
-    "name": "Saint Bernard of Corleone",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Bernardo_di_Corleone.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Bernard of Corleone (born Filippo Latini, 1605-1667) was a Sicilian Capuchin friar. In his youth, he was known as a skilled and hot-tempered swordsman. After nearly killing an opponent in a duel, he experienced a profound conversion, seeking refuge with the Capuchins. He became a lay brother and was known for his severe penances, humble service, and miraculous healings, dedicating his life to repentance and spiritual transformation."
+  "saint-dulce-lopes-pontes": {
+    "name": "Saint Dulce Lopes Pontes",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Irma-dulce-santa-canonizada.jpg",
+    "canonization_date": "October 13, 2019",
+    "history": "Saint Dulce Lopes Pontes (1914–1992) was a Brazilian Catholic Franciscan Sister. Known as the 'Good Angel of Bahia' and 'Mother Teresa of Brazil,' she dedicated her life to helping the poorest in Salvador, Bahia. She founded numerous charitable works, including a hospital, an orphanage, and a school, often working against great odds and relying on divine providence.",
+    "source_url": "https://en.wikipedia.org/wiki/Dulce_Pontes"
   },
-  "saint-ignazia-verzeri": {
-    "name": "Saint Ignazia Verzeri",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Teresa_Eustochio_Verzeri.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Ignazia Verzeri (born Ignazia Verzeri, 1801-1852), also known as Saint Teresa Eustochio Verzeri, was an Italian Benedictine nun. With her spiritual director, she founded the Daughters of the Sacred Heart of Jesus, a congregation dedicated to the education and Christian formation of girls, especially those in need. She focused on establishing schools and orphanages, emphasizing a life rooted in faith and charity."
+  "saint-giuseppina-vannini": {
+    "name": "Saint Giuseppina Vannini",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkDbF_cpkeFX72LUkvTVSwpN2XOzU48rDM2A&s",
+    "canonization_date": "October 13, 2019",
+    "history": "Saint Giuseppina Vannini (1859–1911) was an Italian religious sister and the founder of the Daughters of Saint Camillus. Despite a difficult early life, she dedicated herself to serving the sick, especially the terminally ill, through the charism of Saint Camillus de Lellis. Her congregation continues to provide healthcare and compassionate care to those in need worldwide.",
+    "source_url": "https://en.wikipedia.org/wiki/Giuseppina_Vannini"
   },
-  "saint-rafqa-pietra-choboq-ar-rayes": {
-    "name": "Saint Rafqa Pietra Choboq Ar-Rayès",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Rafqa_Pietra_Choboq_Ar-Ray%C3%A8s.jpg/800px-Rafqa_Pietra_Choboq_Ar-Ray%C3%A8s.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Rafqa Pietra Choboq Ar-Rayès (born Boutroussieh Choboq, 1832-1914) was a Lebanese Maronite nun. After a challenging youth, she joined the Maronite Order. Throughout her life, she endured immense physical suffering, including blindness and paralysis, which she embraced as a participation in Christ's passion. She became a profound example of patience, fortitude, and complete surrender to God's will."
-  },
-  "saint-joseph-marello": {
-    "name": "Saint Joseph Marello",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Giuseppe_Marello.jpg/330px-Giuseppe_Marello.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Joseph Marello (1844-1895) was an Italian bishop and founder of the Oblates of Saint Joseph. As a priest, he served as secretary to the Bishop of Asti and later became Bishop of Acqui. He was deeply devoted to Saint Joseph and focused his congregation on the Christian education of youth, particularly orphans and the poor, and on caring for the sick and elderly. His motto was 'To take care of the interests of Jesus'."
-  },
-  "saint-paula-montal-fornes": {
-    "name": "Saint Paula Montal Fornés",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Paula_Montal_Forn%C3%A9s.jpg/330px-Paula_Montal_Forn%C3%A9s.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Paula Montal Fornés (1799-1889) was a Spanish religious sister who dedicated her life to the education of girls and women, a revolutionary idea for her time. She founded the Congregation of the Daughters of Mary, Religious of the Pious Schools (Piarist Sisters), providing access to education and Christian formation for girls, especially those from disadvantaged backgrounds."
-  },
-  "saint-maria-crescentia-hoss": {
-    "name": "Saint Maria Crescentia Höss",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Maria_Crescentia_H%C3%B6ss_von_Kaufbeuren.jpg/220px-Maria_Crescentia_H%C3%B6ss_von_Kaufbeuren.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Maria Crescentia Höss (1682-1744) was a German Franciscan Tertiary sister. Despite initial resistance from her community due to her poor background, she was admitted and eventually became novice mistress and superior. She was known for her profound humility, mystic experiences, deep spiritual wisdom, and compassionate care for others, serving as a spiritual guide to many."
-  },
-  "saint-leonie-aviat": {
-    "name": "Saint Leonie Aviat",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Leonie_Aviat.jpg/220px-Leonie_Aviat.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Leonie Aviat (born Léonie Françoise de Sales Aviat, 1844-1914) was a French religious sister. With Father Louis Brisson, she co-founded the Oblate Sisters of Saint Francis de Sales, a congregation dedicated to the education and spiritual formation of young working girls, particularly those in factories. She was known for her zeal in evangelization and her tireless work for the social upliftment of young women."
+  "saint-marguerite-bays": {
+    "name": "Saint Marguerite Bays",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStb50aa1YfvfVFn8yV8FjXiEZCdi3sBvbVCA&s",
+    "canonization_date": "October 13, 2019",
+    "history": "Saint Marguerite Bays (1815–1879) was a Swiss laywoman, a seamstress by profession, known for her deep piety, humble life, and mystical experiences. She bore the stigmata, though kept it secret, and dedicated herself to prayer, caring for the poor and sick, and catechesis in her local community. She lived a simple, ordinary life with extraordinary faith.",
+    "source_url": "https://en.wikipedia.org/wiki/Marguerite_Bays"
   }
 }

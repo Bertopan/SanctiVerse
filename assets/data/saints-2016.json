@@ -1,56 +1,65 @@
 {
-  "saint-luigi-scrosoppi": {
-    "name": "Saint Luigi Scrosoppi",
-    "image_url": "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20010610_scrosoppi_photo.html",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Luigi Scrosoppi (1804-1884) was an Italian priest who dedicated his life to the care of orphans and the poor. He founded the Congregation of the Sisters of Providence of Saint Gaetano of Thiene, focusing on the education and support of disadvantaged girls. He was known for his profound charity, humility, and unwavering trust in Divine Providence, often begging for alms to sustain his charitable works."
+  "saint-stanislaus-papczynski": {
+    "name": "Saint Stanislaus Papczyński",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Fr_pap_shadow.jpg",
+    "canonization_date": "June 5, 2016",
+    "history": "Saint Stanislaus Papczyński (1631–1701) was a Polish priest who founded the Congregation of Marian Fathers of the Immaculate Conception of the Most Blessed Virgin Mary. He dedicated his life to promoting devotion to the Immaculate Conception, praying for the souls in Purgatory, and serving the poor and uneducated, especially through education and pastoral care.",
+    "source_url": "https://en.wikipedia.org/wiki/Stanislaus_Papczynski"
   },
-  "saint-agostino-roscelli": {
-    "name": "Saint Agostino Roscelli",
-    "image_url": "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20010610_roscelli_photo.html",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Agostino Roscelli (1818-1902) was an Italian priest born into poverty who dedicated his life to serving the needy, particularly young girls at risk. He founded the Institute of Sisters of the Immaculata to provide education and protection for vulnerable young women. He was known for his deep devotion to the Blessed Virgin Mary and his humble, prayerful life."
+  "saint-maria-elizabeth-hesselblad": {
+    "name": "Saint Maria Elizabeth Hesselblad",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA0UvhGutjPXkVlsnGbOLS6vlpBkHIdUPVuw&s",
+    "canonization_date": "June 5, 2016",
+    "history": "Saint Maria Elizabeth Hesselblad (1870–1957) was a Swedish nurse who converted to Catholicism and founded the Bridgettine Sisters of the Most Holy Savior (also known as the Bridgettines), an order aiming to restore the original Bridgettine monastic life. During World War II, she hid Jewish refugees in her convent in Rome, for which she was posthumously recognized as Righteous Among the Nations by Yad Vashem.",
+    "source_url": "https://en.wikipedia.org/wiki/Maria_Elizabeth_Hesselblad"
   },
-  "saint-bernard-of-corleone": {
-    "name": "Saint Bernard of Corleone",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Bernardo_di_Corleone.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Bernard of Corleone (born Filippo Latini, 1605-1667) was a Sicilian Capuchin friar. In his youth, he was known as a skilled and hot-tempered swordsman. After nearly killing an opponent in a duel, he experienced a profound conversion, seeking refuge with the Capuchins. He became a lay brother and was known for his severe penances, humble service, and miraculous healings, dedicating his life to repentance and spiritual transformation."
+  "saint-jose-sanchez-del-rio": {
+    "name": "Saint José Sánchez del Río",
+    "image_url": "https://d2o87wibqw9nx9cloudfront.net/images/stories/SanJoselito.jpg?1682883238",
+    "canonization_date": "October 16, 2016",
+    "history": "Saint José Sánchez del Río (1913–1928), affectionately known as 'Joselito,' was a Mexican Cristero who was martyred during the Cristero War at the age of 14. He bravely faced torture and execution rather than renounce his Catholic faith, becoming a powerful symbol of religious freedom and steadfast devotion.",
+    "source_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_S%C3%A1nchez_del_R%C3%ADo"
   },
-  "saint-ignazia-verzeri": {
-    "name": "Saint Ignazia Verzeri",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Teresa_Eustochio_Verzeri.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Ignazia Verzeri (born Ignazia Verzeri, 1801-1852), also known as Saint Teresa Eustochio Verzeri, was an Italian Benedictine nun. With her spiritual director, she founded the Daughters of the Sacred Heart of Jesus, a congregation dedicated to the education and Christian formation of girls, especially those in need. She focused on establishing schools and orphanages, emphasizing a life rooted in faith and charity."
+  "saint-jose-gabriel-del-rosario-brochero": {
+    "name": "Saint José Gabriel del Rosario Brochero",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSns_prgAQlqCE3KlgT07YA9fuGRcJnOortQw&s",
+    "canonization_date": "October 16, 2016",
+    "history": "Saint José Gabriel del Rosario Brochero (1840–1914) was an Argentine priest, widely known as the 'Gaucho Priest' or 'Curita Brochero.' He dedicated his life to serving the impoverished and isolated communities in the mountains of Córdoba, riding long distances on muleback to bring the sacraments, preach, and establish schools and infrastructure. He contracted leprosy from ministering to the sick.",
+    "source_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Gabriel_del_Rosario_Brochero"
   },
-  "saint-rafqa-pietra-choboq-ar-rayes": {
-    "name": "Saint Rafqa Pietra Choboq Ar-Rayès",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Rafqa_Pietra_Choboq_Ar-Ray%C3%A8s.jpg/800px-Rafqa_Pietra_Choboq_Ar-Ray%C3%A8s.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Rafqa Pietra Choboq Ar-Rayès (born Boutroussieh Choboq, 1832-1914) was a Lebanese Maronite nun. After a challenging youth, she joined the Maronite Order. Throughout her life, she endured immense physical suffering, including blindness and paralysis, which she embraced as a participation in Christ's passion. She became a profound example of patience, fortitude, and complete surrender to God's will."
+  "saint-salomone-leclerq": {
+    "name": "Saint Salomone Leclerq",
+    "image_url": "https://cumminsinstitute.com/wp-content/uploads/2016/10/solomon-portrait.jpg?w=280&h=416",
+    "canonization_date": "October 16, 2016",
+    "history": "Saint Salomone Leclerq (born Guillaume-Nicolas-Louis Leclerq, 1745–1792) was a French priest and a member of the Institute of the Brothers of the Christian Schools (De La Salle Brothers). He was martyred during the French Revolution, part of the September Massacres, for refusing to swear an oath against the Church. He is revered as one of the 191 martyrs of Paris.",
+    "source_url": "https://en.wikipedia.org/wiki/Salomone_Leclerq"
   },
-  "saint-joseph-marello": {
-    "name": "Saint Joseph Marello",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Giuseppe_Marello.jpg/330px-Giuseppe_Marello.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Joseph Marello (1844-1895) was an Italian bishop and founder of the Oblates of Saint Joseph. As a priest, he served as secretary to the Bishop of Asti and later became Bishop of Acqui. He was deeply devoted to Saint Joseph and focused his congregation on the Christian education of youth, particularly orphans and the poor, and on caring for the sick and elderly. His motto was 'To take care of the interests of Jesus'."
+  "saint-manuel-gonzalez-garcia": {
+    "name": "Saint Manuel González García",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/ManuelGonzalezobispo.jpg",
+    "canonization_date": "October 16, 2016",
+    "history": "Saint Manuel González García (1877–1940) was a Spanish bishop and the founder of the Missionaries Eucharistic Nuns of Nazareth and the Missionaries of Saint John Baptist of the Sacred Host. Known as the 'Bishop of the Tabernacle,' he dedicated his life to promoting devotion to the Eucharist, especially the neglected Sacrament, and encouraging a profound love for Jesus in the Blessed Sacrament.",
+    "source_url": "https://en.wikipedia.org/wiki/Manuel_Gonz%C3%A1lez_Garc%C3%ADa"
   },
-  "saint-paula-montal-fornes": {
-    "name": "Saint Paula Montal Fornés",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Paula_Montal_Forn%C3%A9s.jpg/330px-Paula_Montal_Forn%C3%A9s.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Paula Montal Fornés (1799-1889) was a Spanish religious sister who dedicated her life to the education of girls and women, a revolutionary idea for her time. She founded the Congregation of the Daughters of Mary, Religious of the Pious Schools (Piarist Sisters), providing access to education and Christian formation for girls, especially those from disadvantaged backgrounds."
+  "saint-lodovico-pavoni": {
+    "name": "Saint Lodovico Pavoni",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkrEl31q6Tevpk_iDeOsc3qjYimnnqlpDR3g&s",
+    "canonization_date": "October 16, 2016",
+    "history": "Saint Lodovico Pavoni (1784–1849) was an Italian priest and the founder of the Sons of Mary Immaculate (Pavonians). He dedicated his life to the education and vocational training of poor and abandoned boys, especially through technical and professional schools, aiming to provide them with both spiritual and practical formation for life.",
+    "source_url": "https://en.wikipedia.org/wiki/Lodovico_Pavoni"
   },
-  "saint-maria-crescentia-hoss": {
-    "name": "Saint Maria Crescentia Höss",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Maria_Crescentia_H%C3%B6ss_von_Kaufbeuren.jpg/220px-Maria_Crescentia_H%C3%B6ss_von_Kaufbeuren.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Maria Crescentia Höss (1682-1744) was a German Franciscan Tertiary sister. Despite initial resistance from her community due to her poor background, she was admitted and eventually became novice mistress and superior. She was known for her profound humility, mystic experiences, deep spiritual wisdom, and compassionate care for others, serving as a spiritual guide to many."
+  "saint-alfonso-maria-fusco": {
+    "name": "Saint Alfonso Maria Fusco",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/AlfonsoMariaFusco.jpg",
+    "canonization_date": "October 16, 2016",
+    "history": "Saint Alfonso Maria Fusco (1839–1910) was an Italian priest and the founder of the Sisters of Saint John the Baptist (Battistine Sisters). He dedicated his life to caring for and educating poor and abandoned children, establishing orphanages and schools where girls could receive a comprehensive education rooted in Christian values.",
+    "source_url": "https://en.wikipedia.org/wiki/Alfonso_Maria_Fusco"
   },
-  "saint-leonie-aviat": {
-    "name": "Saint Leonie Aviat",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Leonie_Aviat.jpg/220px-Leonie_Aviat.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Leonie Aviat (born Léonie Françoise de Sales Aviat, 1844-1914) was a French religious sister. With Father Louis Brisson, she co-founded the Oblate Sisters of Saint Francis de Sales, a congregation dedicated to the education and spiritual formation of young working girls, particularly those in factories. She was known for her zeal in evangelization and her tireless work for the social upliftment of young women."
+  "saint-elizabeth-of-the-trinity": {
+    "name": "Saint Elizabeth of the Trinity",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuz7CZcIoVua7bfbAf_6XDUjE4InbkeUdLBg&s",
+    "canonization_date": "October 16, 2016",
+    "history": "Saint Elizabeth of the Trinity (born Élisabeth Catez, 1880–1906) was a French Discalced Carmelite nun. She is known for her profound spirituality focused on the indwelling of the Blessed Trinity within the soul and her 'prayer to the Trinity.' She died young after a prolonged illness, offering her sufferings for the Church and the world.",
+    "source_url": "https://en.wikipedia.org/wiki/Elizabeth_of_the_Trinity"
   }
 }

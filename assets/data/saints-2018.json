@@ -1,56 +1,51 @@
 {
-  "saint-luigi-scrosoppi": {
-    "name": "Saint Luigi Scrosoppi",
-    "image_url": "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20010610_scrosoppi_photo.html",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Luigi Scrosoppi (1804-1884) was an Italian priest who dedicated his life to the care of orphans and the poor. He founded the Congregation of the Sisters of Providence of Saint Gaetano of Thiene, focusing on the education and support of disadvantaged girls. He was known for his profound charity, humility, and unwavering trust in Divine Providence, often begging for alms to sustain his charitable works."
+  "saint-paul-vi": {
+    "name": "Pope Saint Paul VI",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR45E3YJWYVWeXDCKHmA0tDFegLY30dxzL-Q&s",
+    "canonization_date": "October 14, 2018",
+    "history": "Born Giovanni Battista Enrico Antonio Maria Montini (1897–1978), Pope Paul VI served as Pope from 1963 to 1978. He continued and concluded the Second Vatican Council, guiding the Church through the implementation of its reforms. He traveled extensively, promoting peace and dialogue, and issued significant encyclicals, including 'Humanae Vitae'. He was a key figure in the modernization of the Catholic Church.",
+    "source_url": "https://en.wikipedia.org/wiki/Pope_Paul_VI"
   },
-  "saint-agostino-roscelli": {
-    "name": "Saint Agostino Roscelli",
-    "image_url": "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20010610_roscelli_photo.html",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Agostino Roscelli (1818-1902) was an Italian priest born into poverty who dedicated his life to serving the needy, particularly young girls at risk. He founded the Institute of Sisters of the Immaculata to provide education and protection for vulnerable young women. He was known for his deep devotion to the Blessed Virgin Mary and his humble, prayerful life."
+  "saint-oscar-romero": {
+    "name": "Saint Óscar Romero",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCsSigNLioHo3GqwIaJ5ogb-jPEfxWcboqLA&s",
+    "canonization_date": "October 14, 2018",
+    "history": "Saint Óscar Arnulfo Romero Galdámez (1917–1980) was a Salvadoran Catholic priest who served as the fourth Archbishop of San Salvador. He was known for his outspoken criticism of poverty, social injustice, assassinations, and torture amid the escalating Salvadoran Civil War. He was assassinated on March 24, 1980, while celebrating Mass, becoming a martyr for justice and faith.",
+    "source_url": "https://en.wikipedia.org/wiki/%C3%93scar_Romero"
   },
-  "saint-bernard-of-corleone": {
-    "name": "Saint Bernard of Corleone",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Bernardo_di_Corleone.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Bernard of Corleone (born Filippo Latini, 1605-1667) was a Sicilian Capuchin friar. In his youth, he was known as a skilled and hot-tempered swordsman. After nearly killing an opponent in a duel, he experienced a profound conversion, seeking refuge with the Capuchins. He became a lay brother and was known for his severe penances, humble service, and miraculous healings, dedicating his life to repentance and spiritual transformation."
+  "saint-francesco-spinelli": {
+    "name": "Saint Francesco Spinelli",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmQiy1c40NUmnzqlqnT-bLWEPyBI73KLNiSA&s",
+    "canonization_date": "October 14, 2018",
+    "history": "Saint Francesco Spinelli (1853–1913) was an Italian priest and the co-founder of the Institute of the Adorers of the Blessed Sacrament. He dedicated his life to Eucharistic adoration and the care of the poor, especially orphaned girls. Despite facing significant financial difficulties and opposition, he remained steadfast in his devotion and mission.",
+    "source_url": "https://en.wikipedia.org/wiki/Francesco_Spinelli"
   },
-  "saint-ignazia-verzeri": {
-    "name": "Saint Ignazia Verzeri",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Teresa_Eustochio_Verzeri.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Ignazia Verzeri (born Ignazia Verzeri, 1801-1852), also known as Saint Teresa Eustochio Verzeri, was an Italian Benedictine nun. With her spiritual director, she founded the Daughters of the Sacred Heart of Jesus, a congregation dedicated to the education and Christian formation of girls, especially those in need. She focused on establishing schools and orphanages, emphasizing a life rooted in faith and charity."
+  "saint-vincenzo-romano": {
+    "name": "Saint Vincenzo Romano",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiUPNgSENFwfsef9JU0keJOZ4VHYlLs7vg9g&s",
+    "canonization_date": "October 14, 2018",
+    "history": "Saint Vincenzo Romano (1831–1890) was an Italian diocesan priest known for his pastoral dedication and tireless service to his parishioners in Torre del Greco, near Naples. He was deeply committed to the poor and the marginalized, rebuilt his church after the 1861 eruption of Mount Vesuvius, and was known for his humble and zealous ministry.",
+    "source_url": "https://en.wikipedia.org/wiki/Vincenzo_Romano"
   },
-  "saint-rafqa-pietra-choboq-ar-rayes": {
-    "name": "Saint Rafqa Pietra Choboq Ar-Rayès",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Rafqa_Pietra_Choboq_Ar-Ray%C3%A8s.jpg/800px-Rafqa_Pietra_Choboq_Ar-Ray%C3%A8s.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Rafqa Pietra Choboq Ar-Rayès (born Boutroussieh Choboq, 1832-1914) was a Lebanese Maronite nun. After a challenging youth, she joined the Maronite Order. Throughout her life, she endured immense physical suffering, including blindness and paralysis, which she embraced as a participation in Christ's passion. She became a profound example of patience, fortitude, and complete surrender to God's will."
+  "saint-maria-caterina-kasper": {
+    "name": "Saint Maria Caterina Kasper",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7QCPiJIS0-9P0fH-uMc9oSrPXH3in36zmQ&s",
+    "canonization_date": "October 14, 2018",
+    "history": "Saint Maria Caterina Kasper (1820–1898) was a German nun who founded the Poor Handmaids of Jesus Christ. She established her congregation to serve the poor, the sick, and to provide education, focusing on helping women and children. Her life was characterized by deep faith, simplicity, and practical charity, living out the Gospel message in humble service.",
+    "source_url": "https://en.wikipedia.org/wiki/Maria_Caterina_Kasper"
   },
-  "saint-joseph-marello": {
-    "name": "Saint Joseph Marello",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Giuseppe_Marello.jpg/330px-Giuseppe_Marello.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Joseph Marello (1844-1895) was an Italian bishop and founder of the Oblates of Saint Joseph. As a priest, he served as secretary to the Bishop of Asti and later became Bishop of Acqui. He was deeply devoted to Saint Joseph and focused his congregation on the Christian education of youth, particularly orphans and the poor, and on caring for the sick and elderly. His motto was 'To take care of the interests of Jesus'."
+  "saint-nazaria-ignacia-march-mesa": {
+    "name": "Saint Nazaria Ignacia March Mesa",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Santa_Nazaria_Ignacia.jpg",
+    "canonization_date": "October 14, 2018",
+    "history": "Saint Nazaria Ignacia March Mesa (1889–1943) was a Spanish nun who founded the Pontifical Missionary Crusaders of Mary Immaculate. She dedicated her life to evangelization, promoting the role of women in the Church, and serving the poor and marginalized, particularly in Latin America (Bolivia and Argentina). She emphasized prayer, sacrifice, and mission work.",
+    "source_url": "https://en.wikipedia.org/wiki/Nazaria_Ignacia_March_Mesa"
   },
-  "saint-paula-montal-fornes": {
-    "name": "Saint Paula Montal Fornés",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Paula_Montal_Forn%C3%A9s.jpg/330px-Paula_Montal_Forn%C3%A9s.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Paula Montal Fornés (1799-1889) was a Spanish religious sister who dedicated her life to the education of girls and women, a revolutionary idea for her time. She founded the Congregation of the Daughters of Mary, Religious of the Pious Schools (Piarist Sisters), providing access to education and Christian formation for girls, especially those from disadvantaged backgrounds."
-  },
-  "saint-maria-crescentia-hoss": {
-    "name": "Saint Maria Crescentia Höss",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Maria_Crescentia_H%C3%B6ss_von_Kaufbeuren.jpg/220px-Maria_Crescentia_H%C3%B6ss_von_Kaufbeuren.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Maria Crescentia Höss (1682-1744) was a German Franciscan Tertiary sister. Despite initial resistance from her community due to her poor background, she was admitted and eventually became novice mistress and superior. She was known for her profound humility, mystic experiences, deep spiritual wisdom, and compassionate care for others, serving as a spiritual guide to many."
-  },
-  "saint-leonie-aviat": {
-    "name": "Saint Leonie Aviat",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Leonie_Aviat.jpg/220px-Leonie_Aviat.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Leonie Aviat (born Léonie Françoise de Sales Aviat, 1844-1914) was a French religious sister. With Father Louis Brisson, she co-founded the Oblate Sisters of Saint Francis de Sales, a congregation dedicated to the education and spiritual formation of young working girls, particularly those in factories. She was known for her zeal in evangelization and her tireless work for the social upliftment of young women."
+  "saint-nunzio-sulprizio": {
+    "name": "Saint Nunzio Sulprizio",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpWbRH8V1z3zigX3cOra00juDr2HbAlcZQwQ&s",
+    "canonization_date": "October 14, 2018",
+    "history": "Saint Nunzio Sulprizio (1817–1836) was an Italian layman who lived a short life marked by suffering from a crippling disease and poor working conditions. Despite his immense pain and poverty, he offered his sufferings to God with heroic patience and faith, becoming an inspiration for those who endure chronic illness and hardship. He is considered a patron of the disabled and victims of work-related accidents.",
+    "source_url": "https://en.wikipedia.org/wiki/Nunzio_Sulprizio"
   }
 }

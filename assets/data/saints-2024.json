@@ -1,56 +1,30 @@
 {
-  "saint-luigi-scrosoppi": {
-    "name": "Saint Luigi Scrosoppi",
-    "image_url": "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20010610_scrosoppi_photo.html",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Luigi Scrosoppi (1804-1884) was an Italian priest who dedicated his life to the care of orphans and the poor. He founded the Congregation of the Sisters of Providence of Saint Gaetano of Thiene, focusing on the education and support of disadvantaged girls. He was known for his profound charity, humility, and unwavering trust in Divine Providence, often begging for alms to sustain his charitable works."
+  "saint-manuel-ruiz-and-companions": {
+    "name": "Saint Manuel Ruiz and Seven Companions",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7PSrXGIE4hNpT1S3VeIRkuMdGrOuW9TAR8w&s",
+    "canonization_date": "October 20, 2024",
+    "history": "Saint Manuel Ruiz (1804–1860) was a Franciscan priest and leader of a community in Damascus, Syria, along with seven other Franciscan friars and three Maronite laymen. They were martyred during the 1860 Damascus massacre, a period of anti-Christian violence. They chose to remain steadfast in their faith rather than convert to Islam, suffering torture and death. Their canonization recognizes their heroic witness to Christ.",
+    "source_url": "https://en.wikipedia.org/wiki/Martyrs_of_Damascus"
   },
-  "saint-agostino-roscelli": {
-    "name": "Saint Agostino Roscelli",
-    "image_url": "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20010610_roscelli_photo.html",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Agostino Roscelli (1818-1902) was an Italian priest born into poverty who dedicated his life to serving the needy, particularly young girls at risk. He founded the Institute of Sisters of the Immaculata to provide education and protection for vulnerable young women. He was known for his deep devotion to the Blessed Virgin Mary and his humble, prayerful life."
+  "saint-giuseppe-allamano": {
+    "name": "Saint Giuseppe Allamano",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1lHZipvo4fSt0CPyfUTRM16vxn1jLbf_SAQ&s",
+    "canonization_date": "October 20, 2024",
+    "history": "Saint Giuseppe Allamano (1851–1926) was an Italian priest and the founder of the Consolata Missionaries (Institutes of the Consolata Missionaries and Consolata Missionary Sisters). He dedicated his life to missionary work, particularly in Africa, and emphasized the importance of prayer, sacrifice, and the compassionate evangelization of peoples, focusing on the Blessed Virgin Mary under the title 'Consolata'.",
+    "source_url": "https://en.wikipedia.org/wiki/Giuseppe_Allamano"
   },
-  "saint-bernard-of-corleone": {
-    "name": "Saint Bernard of Corleone",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Bernardo_di_Corleone.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Bernard of Corleone (born Filippo Latini, 1605-1667) was a Sicilian Capuchin friar. In his youth, he was known as a skilled and hot-tempered swordsman. After nearly killing an opponent in a duel, he experienced a profound conversion, seeking refuge with the Capuchins. He became a lay brother and was known for his severe penances, humble service, and miraculous healings, dedicating his life to repentance and spiritual transformation."
+  "saint-marie-leonie-paradis": {
+    "name": "Saint Marie-Léonie Paradis",
+    "image_url": "https://www.cccb.ca/wp-content/uploads/2018/02/Marie-Leonie-Paradis-240x300.jpg",
+    "canonization_date": "October 20, 2024",
+    "history": "Saint Marie-Léonie Paradis (1840–1912) was a Canadian religious sister and the founder of the Little Sisters of the Holy Family. She dedicated her life to supporting the spiritual and material needs of priests, seminarians, and bishops, particularly by serving in rectories and seminaries. Her congregation lived a simple, hidden life of service, prayer, and charity, providing domestic assistance to the clergy.",
+    "source_url": "https://en.wikipedia.org/wiki/Marie-L%C3%A9onie_Paradis"
   },
-  "saint-ignazia-verzeri": {
-    "name": "Saint Ignazia Verzeri",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Teresa_Eustochio_Verzeri.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Ignazia Verzeri (born Ignazia Verzeri, 1801-1852), also known as Saint Teresa Eustochio Verzeri, was an Italian Benedictine nun. With her spiritual director, she founded the Daughters of the Sacred Heart of Jesus, a congregation dedicated to the education and Christian formation of girls, especially those in need. She focused on establishing schools and orphanages, emphasizing a life rooted in faith and charity."
-  },
-  "saint-rafqa-pietra-choboq-ar-rayes": {
-    "name": "Saint Rafqa Pietra Choboq Ar-Rayès",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Rafqa_Pietra_Choboq_Ar-Ray%C3%A8s.jpg/800px-Rafqa_Pietra_Choboq_Ar-Ray%C3%A8s.jpg",
-    "canonization_date": "June 10, 2001",
-    "history": "Saint Rafqa Pietra Choboq Ar-Rayès (born Boutroussieh Choboq, 1832-1914) was a Lebanese Maronite nun. After a challenging youth, she joined the Maronite Order. Throughout her life, she endured immense physical suffering, including blindness and paralysis, which she embraced as a participation in Christ's passion. She became a profound example of patience, fortitude, and complete surrender to God's will."
-  },
-  "saint-joseph-marello": {
-    "name": "Saint Joseph Marello",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Giuseppe_Marello.jpg/330px-Giuseppe_Marello.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Joseph Marello (1844-1895) was an Italian bishop and founder of the Oblates of Saint Joseph. As a priest, he served as secretary to the Bishop of Asti and later became Bishop of Acqui. He was deeply devoted to Saint Joseph and focused his congregation on the Christian education of youth, particularly orphans and the poor, and on caring for the sick and elderly. His motto was 'To take care of the interests of Jesus'."
-  },
-  "saint-paula-montal-fornes": {
-    "name": "Saint Paula Montal Fornés",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Paula_Montal_Forn%C3%A9s.jpg/330px-Paula_Montal_Forn%C3%A9s.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Paula Montal Fornés (1799-1889) was a Spanish religious sister who dedicated her life to the education of girls and women, a revolutionary idea for her time. She founded the Congregation of the Daughters of Mary, Religious of the Pious Schools (Piarist Sisters), providing access to education and Christian formation for girls, especially those from disadvantaged backgrounds."
-  },
-  "saint-maria-crescentia-hoss": {
-    "name": "Saint Maria Crescentia Höss",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Maria_Crescentia_H%C3%B6ss_von_Kaufbeuren.jpg/220px-Maria_Crescentia_H%C3%B6ss_von_Kaufbeuren.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Maria Crescentia Höss (1682-1744) was a German Franciscan Tertiary sister. Despite initial resistance from her community due to her poor background, she was admitted and eventually became novice mistress and superior. She was known for her profound humility, mystic experiences, deep spiritual wisdom, and compassionate care for others, serving as a spiritual guide to many."
-  },
-  "saint-leonie-aviat": {
-    "name": "Saint Leonie Aviat",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Leonie_Aviat.jpg/220px-Leonie_Aviat.jpg",
-    "canonization_date": "November 25, 2001",
-    "history": "Saint Leonie Aviat (born Léonie Françoise de Sales Aviat, 1844-1914) was a French religious sister. With Father Louis Brisson, she co-founded the Oblate Sisters of Saint Francis de Sales, a congregation dedicated to the education and spiritual formation of young working girls, particularly those in factories. She was known for her zeal in evangelization and her tireless work for the social upliftment of young women."
+  "saint-elena-guerra": {
+    "name": "Saint Elena Guerra",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0bzlAFqzHYjJ08kzQmJv0jOCqNcnxns7oMA&s",
+    "canonization_date": "October 20, 2024",
+    "history": "Saint Elena Guerra (1845–1914) was an Italian religious sister and the founder of the Oblate Sisters of the Holy Spirit (also known as the Sisters of Saint Zita). She was a pioneer in promoting devotion to the Holy Spirit, urging Catholics to rediscover the presence and action of the Third Person of the Trinity in their lives. She dedicated her life to education and evangelization, especially for young girls.",
+    "source_url": "https://en.wikipedia.org/wiki/Elena_Guerra"
   }
 }

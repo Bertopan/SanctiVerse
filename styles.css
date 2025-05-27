@@ -450,3 +450,50 @@ body {
 .saint-source a:hover {
     text-decoration: underline;
 }
+
+/* Styling for No Saints Message and Error Messages */
+.no-saints-message-container,
+.error-message-container {
+    text-align: center;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+    background-color: #fcf8f3; /* Light beige/cream */
+    border: 1px dashed #e0c9a6; /* Dashed border for emphasis */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.no-saints-message,
+.error-message {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2em;
+    color: #6a6a6a;
+    line-height: 1.6;
+}
+
+.error-message {
+    color: #d9534f; /* A reddish color for errors */
+    font-weight: bold;
+}
+
+.error-message-detail {
+    font-family: 'Crimson Text', serif;
+    font-size: 0.9em;
+    color: #a0a0a0;
+    margin-top: 5px;
+}
+
+/* Optional: Add some styling for the source link in detail view if you want it distinct */
+.saint-source a.source-link {
+    color: #007bff; /* Blue link */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95em;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.saint-source a.source-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
