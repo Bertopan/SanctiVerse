@@ -1,225 +1,276 @@
-:root {
-    --color-primary-dark: #8B4513;
-    --color-primary-medium: #CD853F;
-    --color-primary-light: #F4A460;
-    --color-accent-gold: #FFD700;
-    --color-bg-light: #FFF8DC;
-    --color-text-dark: #333333;
-    --color-text-light: #ffffff;
-    --color-border: #D2B48C;
-}
-
+/* General Body and Container Styles */
 body {
     font-family: 'Crimson Text', serif;
-    background-color: var(--color-bg-light);
-    color: var(--color-text-dark);
     margin: 0;
     padding: 0;
+    background-color: #f8f0e5; /* Light cream background */
+    color: #333;
     line-height: 1.6;
-    scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensures footer is at the bottom */
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: var(--color-primary-dark);
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
+.main-content-area {
+    flex: 1; /* Allows content area to grow and push footer down */
+    width: 100%;
+    max-width: 1400px; /* Max width for overall content */
+    margin: 0 auto; /* Center the main content area */
 }
 
-a {
-    text-decoration: none;
-    color: var(--color-primary-dark);
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--color-accent-gold);
-}
-
+/* Header Styles */
 .main-header {
-    background-color: var(--color-primary-dark);
-    color: var(--color-text-light);
-    padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: #8B4513; /* SaddleBrown */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header-inner-content {
-    max-width: 1200px;
+    max-width: 1200px; /* Align with main content */
     margin: 0 auto;
-    padding: 0 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    padding: 0 20px;
 }
 
 .site-branding h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
     margin: 0;
-    font-size: 3em;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--color-text-light);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
 }
 
 .site-branding p {
-    margin: 5px 0 0;
-    font-style: italic;
-    font-size: 1.1em;
-    color: var(--color-text-light);
+    font-family: 'Crimson Text', serif;
+    font-size: 0.9em;
+    margin: 0;
+    opacity: 0.8;
 }
 
+/* Main Navigation Styles */
 .main-nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
-    margin: 15px 0 0;
     display: flex;
-    gap: 25px;
 }
 
-.main-nav ul li a {
-    color: var(--color-text-light);
-    font-weight: bold;
+.main-nav li {
+    margin-left: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Crimson Text', serif;
     font-size: 1.1em;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 700;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+    position: relative;
 }
 
-.main-nav ul li a:hover,
-.main-nav ul li a.active {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: var(--color-accent-gold);
+.main-nav a:hover,
+.main-nav a.active {
+    color: #f0e68c; /* Khaki color for hover/active */
 }
 
+/* Underline effect for main nav */
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #f0e68c;
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+    width: 100%;
+}
+
+/* Year Navigation Styles */
 .year-navigation-wrapper {
-    background-color: var(--color-primary-medium);
+    background-color: #f4cda3; /* Light orange/brown */
     padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Make year nav sticky */
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    border-bottom: 2px solid #cd853f; /* Peru color for border */
 }
 
 .year-nav ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0 20px;
     display: flex;
     justify-content: center;
-    gap: 15px;
-    white-space: nowrap;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 15px; /* Space between year links */
+}
+
+.year-nav li {
+    flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+.year-nav a {
+    text-decoration: none;
+    color: #8B4513; /* SaddleBrown */
+    font-family: 'Crimson Text', serif;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 8px 15px;
+    border: 1px solid #d2b48c; /* Tan border */
+    border-radius: 20px;
+    background-color: #ffe4b5; /* Moccasin for background */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+}
+
+.year-nav a:hover {
+    background-color: #f0e68c; /* Khaki for hover */
+    color: #694a15; /* Darker brown */
+    transform: translateY(-2px);
+    border-color: #f0e68c;
+}
+
+.year-nav a.active {
+    background-color: #f0e68c; /* Khaki for active */
+    color: #694a15;
+    border-color: #f0e68c;
+    box-shadow: 0 0 8px rgba(240, 230, 140, 0.7); /* Subtle glow */
+}
+
+/* General Content Section Styles (for both index.html and year pages) */
+.content-section, .year-content-section {
+    display: none; /* All content sections are hidden by default */
+    padding: 40px 20px;
+    text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-}
-
-.year-nav ul li a {
-    display: block;
-    padding: 8px 15px;
-    background-color: var(--color-primary-light);
-    color: var(--color-primary-dark);
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.95em;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-
-.year-nav ul li a:hover,
-.year-nav ul li a.active-year {
-    background-color: var(--color-accent-gold);
-    color: var(--color-text-light);
-    transform: translateY(-2px);
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-}
-
-.main-content-area {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: var(--color-text-light);
+    background-color: white; /* White background for content */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    flex-grow: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.content-section {
-    display: none;
-    animation: fadeIn 0.5s ease-out;
+.content-section.active, .year-content-section.active {
+    display: block; /* Only the active content section is displayed */
 }
 
-.content-section.active {
-    display: block;
+.content-section h2, .year-content-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    color: #8B4513; /* SaddleBrown */
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+.content-section h2::after, .year-content-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #f0e68c; /* Khaki line */
+    border-radius: 2px;
 }
 
-#home-content h2 {
-    font-size: 2.5em;
-    color: var(--color-accent-gold);
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+/* Home Content Specific Styles (index.html) */
+#home-content p {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
 }
 
 .intro-cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin-top: 40px;
     flex-wrap: wrap;
 }
 
 .intro-card {
-    background-color: var(--color-bg-light);
-    border: 1px solid var(--color-border);
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 25px;
+    padding: 30px;
+    width: 300px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 1;
-    min-width: 280px;
-    max-width: 400px;
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .intro-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .intro-card h3 {
-    color: var(--color-primary-medium);
-    margin-bottom: 10px;
-    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+    color: #4CAF50; /* A nice green for headings */
+    margin-bottom: 15px;
+    font-size: 1.8em;
 }
 
+.intro-card p {
+    font-family: 'Crimson Text', serif;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* About Us and Contact Us Styles */
+#about-content p, #contact-content p {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.15em;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: justify;
+}
+
+#contact-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact-content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #8B4513; /* SaddleBrown */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.site-footer p {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* Saints Grid (for saints-YYYY.html) */
 .saints-grid {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
     padding: 20px 0;
-}
-
-.saints-row {
-    display: grid;
-    gap: 25px;
-    justify-content: center;
-}
-
-.saints-row-5 {
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.saints-row-4 {
-    grid-template-columns: repeat(4, 1fr);
 }
 
 .saint-card {
@@ -227,263 +278,156 @@ a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: var(--color-bg-light);
-    border: 1px solid var(--color-border);
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    box-sizing: border-box;
+    text-decoration: none;
+    color: #333;
+    width: 180px; /* Fixed width for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .saint-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    border-color: var(--color-accent-gold);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .saint-card img {
-    max-width: 100%;
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border: 3px solid var(--color-primary-light);
+    object-fit: cover;
+    border: 3px solid #f0e68c;
     margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.saint-card .saint-name {
-    margin: 0;
+.saint-card p.saint-name {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.05em;
     font-weight: bold;
-    color: var(--color-primary-dark);
+    line-height: 1.3;
+    color: #555;
+}
+
+/* Saint Detail View (for saints-YYYY.html, when a saint card is clicked) */
+#saint-detail-view {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.back-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 1em;
-}
-
-.site-footer {
-    background-color: var(--color-primary-dark);
-    color: var(--color-text-light);
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media (max-width: 768px) {
-    .main-header {
-        padding: 15px 0;
-    }
-
-    .site-branding h1 {
-        font-size: 2.2em;
-    }
-
-    .site-branding p {
-        font-size: 0.9em;
-    }
-
-    .main-nav ul {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .year-nav ul {
-        justify-content: flex-start;
-        padding: 0 10px;
-    }
-
-    .year-nav ul li a {
-        padding: 6px 12px;
-        font-size: 0.85em;
-    }
-
-    .main-content-area {
-        margin: 20px auto;
-        padding: 15px;
-    }
-
-    .content-section h2 {
-        font-size: 1.8em;
-    }
-
-    .saints-row-5,
-    .saints-row-4 {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-        gap: 15px;
-    }
-
-    .saint-card img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .intro-cards {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .site-branding h1 {
-        font-size: 1.8em;
-    }
-
-    .site-branding p {
-        font-size: 0.8em;
-    }
-
-    .year-nav ul {
-        padding: 0 5px;
-    }
-
-    .year-nav ul li a {
-        padding: 5px 10px;
-        font-size: 0.8em;
-    }
-
-    .saints-row-5,
-    .saints-row-4 {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        gap: 10px;
-    }
-
-    .saint-card img {
-        width: 90px;
-        height: 90px;
-    }
-
-    .saint-card .saint-name {
-        font-size: 0.8em;
-    }
-}
-
-
-/* --- Styles for saint-detail.html --- */
-
-body {
-    background-color: var(--color-accent-gold); /* Old gold background for the detail page */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    padding: 20px; /* Add some padding around the container */
-    box-sizing: border-box; /* Include padding in element's total width and height */
-}
-
-.saint-container {
-    background-color: var(--color-bg-light); /* Creamy background for the card */
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
-    max-width: 600px; /* Max width for the content box */
-    width: 100%;
-    text-align: center;
-    border: 2px solid var(--color-primary-medium); /* Subtle border */
-    animation: slideInUp 0.7s ease-out; /* Animation for detail page entry */
-}
-
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.saint-image-container {
-    width: 250px; /* Adjust size, ensuring it's 500px or less */
-    height: 250px; /* Make it square */
-    margin: 0 auto 20px;
-    border: 5px solid var(--color-primary-dark); /* Stronger border for image */
-    border-radius: 50%; /* Circular image container */
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background-color: var(--color-primary-light); /* Background if image doesn't fill */
-}
-
-.saint-image {
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the container */
-    object-position: center; /* Centers the image within its frame */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.saint-name-date {
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.saint-detail-content-container {
+    text-align: center;
+}
+
+.saint-detail-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f0e68c;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+}
+
+.saint-detail-name-date {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: var(--color-primary-dark);
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--color-border); /* A dividing line */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.saint-detail-name-date small {
+    font-family: 'Crimson Text', serif;
+    font-size: 0.6em;
+    color: #666;
+    display: block;
+    margin-top: 5px;
 }
 
 .saint-history {
-    text-align: left;
-    line-height: 1.7;
-    font-size: 1.1em;
-    color: var(--color-text-dark);
+    text-align: justify;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.15em;
+    line-height: 1.8;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .saint-history p {
-    margin-bottom: 1em; /* Space between paragraphs */
-    text-indent: 1.5em; /* Indent first line of paragraphs */
+    margin-bottom: 1em;
 }
 
-/* Responsive adjustments for saint-detail.html */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .saint-container {
-        padding: 20px;
-        max-width: 90%;
+    .header-inner-content {
+        flex-direction: column;
+        text-align: center;
     }
-
-    .saint-image-container {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 15px;
+    .main-nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .saint-name-date {
-        font-size: 1.5em;
+    .main-nav li {
+        margin: 5px 0;
     }
-
-    .saint-history {
-        font-size: 1em;
+    .site-branding h1 {
+        font-size: 2em;
     }
-}
-
-@media (max-width: 480px) {
-    .saint-container {
-        padding: 15px;
-        border-radius: 8px;
+    .content-section h2, .year-content-section h2 {
+        font-size: 2em;
     }
-
-    .saint-image-container {
+    .intro-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-card {
+        width: 90%;
+    }
+    .year-nav ul {
+        gap: 10px;
+    }
+    .year-nav a {
+        padding: 6px 12px;
+    }
+    .saint-card {
+        width: 150px;
+    }
+    .saint-detail-image {
         width: 150px;
         height: 150px;
-        border-width: 3px;
-        margin-bottom: 10px;
     }
-
-    .saint-name-date {
-        font-size: 1.3em;
-        margin-bottom: 10px;
-        padding-bottom: 8px;
+    .saint-detail-name-date {
+        font-size: 1.8em;
     }
-
     .saint-history {
-        font-size: 0.95em;
-        line-height: 1.6;
+        font-size: 1em;
     }
 }
