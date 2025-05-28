@@ -1,0 +1,14 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+<circle cx="50" cy="50" r="45" stroke="#8B4513" stroke-width="6" fill="none"/>
+<path d="M40 70 C40 60 50 40 50 35 C50 40 60 60 60 70 H40 Z" fill="#8B4513"/>
+<path d="M43 67 C43 58 50 43 50 39 C50 43 57 58 57 67 H43 Z" fill="#F0E68C"/>
+<circle cx="50" cy="50" r="10" fill="#F0E68C"/>
+<line x1="50" y1="50" x2="50" y2="20" stroke="#F0E68C" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+<line x1="50" y1="50" x2="70" y2="35" stroke="#F0E68C" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+<line x1="50" y1="50" x2="80" y2="50" stroke="#F0E68C" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+<line x1="50" y1="50" x2="70" y2="65" stroke="#F0E68C" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+<line x1="50" y1="50" x2="50" y2="80" stroke="#F0E68C" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+<line x1="50" y1="50" x2="30" y2="65" stroke="#F0E68C" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+<line x1="50" y1="50" x2="20" y2="50" stroke="#F0E68C" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+<line x1="50" y1="50" x2="30" y2="35" stroke="#F0E68C" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+</svg>

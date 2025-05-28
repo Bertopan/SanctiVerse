@@ -522,3 +522,73 @@ body {
     background-color: #cccccc;
     cursor: not-allowed;
 }
+
+/* --- New Styles for SanctiVerse Logo and Header Layout --- */
+
+/* Ensures the header content is flexible for logo and nav alignment */
+.header-inner-content {
+    display: flex;
+    justify-content: space-between; /* Puts logo on left, nav on right */
+    align-items: center; /* Vertically centers items */
+}
+
+/* Styles for the container holding the logo (and potential text) */
+.site-branding {
+    flex-shrink: 0; /* Prevents it from shrinking excessively */
+    display: flex; /* Helps align logo and text if both are present */
+    align-items: center; /* Vertically aligns logo and text if both are present */
+}
+
+/* Styles for the link wrapping the logo */
+.site-logo-link {
+    display: block; /* Ensures the link behaves like a block element */
+    line-height: 0; /* Removes extra space below the image */
+    /* text-decoration: none; /* Uncomment if you want to remove the default link underline */
+}
+
+/* Styles for the actual SVG logo image */
+.site-logo {
+    height: 80px; /* Adjust this value to control the logo's height (e.g., 60px, 100px) */
+    width: auto; /* Maintains the aspect ratio of your SVG */
+    display: block; /* Essential for proper sizing and margin control */
+    vertical-align: middle; /* Helps with vertical alignment in some layouts */
+    /* margin-right: 15px; /* Uncomment and adjust if you decide to keep text next to the logo */
+}
+
+/* Optional: Visually hides the h1 and p text if the logo is replacing them,
+   but keeps them in the HTML for accessibility and SEO. */
+.site-branding h1,
+.site-branding p {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .header-inner-content {
+        flex-direction: column; /* Stack logo and nav vertically */
+        text-align: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        margin-top: 15px;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0; /* More space between stacked links */
+    }
+}
+
+@media (max-width: 480px) {
+    .site-logo {
+        height: 60px; /* Slightly smaller logo on very small screens */
+    }
+}
