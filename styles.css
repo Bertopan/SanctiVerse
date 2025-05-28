@@ -55,14 +55,9 @@ body {
     height: 80px; /* Adjust this value to control the logo's height (e.g., 60px, 100px) */
     width: auto; /* Maintains the aspect ratio of your SVG */
     display: block; /* Essential for proper sizing and margin control */
-    vertical-align: middle; /* Helps with vertical alignment in some layouts */
 }
 
 /* Styles for the container holding the h1 and p text */
-.site-titles {
-    /* No specific flex properties needed here; site-branding handles the layout */
-}
-
 .site-titles h1 {
     font-family: 'Playfair Display', serif; /* Consistent with your design */
     font-size: 2.5em; /* Adjust as needed */
@@ -415,6 +410,7 @@ body {
 .saint-history p {
     margin-bottom: 1em;
 }
+
 /* Styles for the source link in detail view */
 .saint-source {
     margin-top: 15px;
